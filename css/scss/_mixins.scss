@@ -1,0 +1,44 @@
+@mixin clearfix() {
+	&:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+}
+
+@mixin vertical-gradient($from: #000, $to: #FFF) {
+	background: $from;
+	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background: -webkit-linear-gradient($from, $to);
+	background: -moz-linear-gradient(center top, $from 0%, $to 100%);
+	background: -moz-gradient(center top, $from 0%, $to 100%);
+}
+
+@mixin borderbox() {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+@mixin device-width($width){
+	@media only screen and (max-width: $width * 6.25em){
+		@content;
+	}
+}
+
+@mixin font-size($size){
+	font-size: ($size) + px;
+	font-size: ($size / 10) + rem;
+}
+
+@function pxtoem($px){
+	@return $px * 0.0769827586em;
+}
+
+@mixin valign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

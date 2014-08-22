@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('fonts/MuseoSans_500-webfont.eot');
+    src: url('fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('fonts/MuseoSans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@mixin arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.arial {
+	@include arial;
+}
+
+@mixin museo {
+	font-family: 'museo_sans500',Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.museo {
+	@include museo;
+}

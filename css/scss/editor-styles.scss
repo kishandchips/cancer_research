@@ -1,0 +1,26 @@
+@import 'compass/css3';
+@import 'mixins.scss';
+@import 'normalize.scss';
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'icons.scss';
+@import 'typography.scss';
+@import 'grid.scss';
+@import 'forms.scss';
+@import 'buttons.scss';
+@import 'misc.scss';
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	background: #FFF;
+	color: #333333;
+	@include arial;
+	@include font-size(14);
+	overflow-x: hidden;
+	padding: 10px;
+}

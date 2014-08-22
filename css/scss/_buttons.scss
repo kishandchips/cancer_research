@@ -1,0 +1,24 @@
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+
+//  {
+// 	@include transition(background-color 0.3s ease);
+// 	background: #eeb111;
+// 	border: 0;
+// 	line-height: 1;
+// 	@include border-radius(2px);
+// 	&:hover {
+// 		background: #d9a110;
+// 	}
+// }
+
+button {
+	display: inline-block;
+	background: none;
+	border: none;
+	&:focus {
+		outline: none;
+	}
+}
