@@ -369,6 +369,29 @@ body {
 
 		a {
 			position: relative;
+
+			.inner {
+				overflow: hidden;
+			}
+
+			img {
+				@include valign;
+				@include transition(all 0.5s ease-in-out);
+				position: relative;
+				top: 50%;
+				-webkit-transform:scale(1);
+				-ms-transform: scale(1);
+				transform: scale(1);		
+				display: block;		
+			}	
+			
+			&:hover {
+				img {
+					-webkit-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);					
+				}
+			}		
 		}
 
 		h2 {
@@ -396,7 +419,7 @@ body {
 		}
 
 		.three {
-			width: 33.3%;
+			width: 33.2%;
 		}
 	}
 }
