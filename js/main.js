@@ -82,7 +82,15 @@
 					 //CLOSE IF OPENED
 					if ($(this).hasClass('selected')) {
 						triggers.removeClass('selected');
-						content.removeClass('selected');						
+						content.removeClass('selected');				
+
+						var selected = $('.acc-content.selected'),
+							currPoster = $('.poster', selected),
+							currPlayer = $('.player', selected);				
+
+						if(main.VideoChanger.player) {
+							main.VideoChanger.player.pauseVideo();
+						}				
 
 						content.eq(currIndex).stop().animate({ height: 0 }, animTime);
 		
@@ -102,7 +110,6 @@
 						
 						setTimeout(function() {
 							main.VideoChanger.player.pauseVideo();
-							console.log('pause most');
 						}, 1000);
 
 							
@@ -130,7 +137,7 @@
 			$(document).on('touchstart click', '.footer-btn', function(e){
 				e.preventDefault();
 
-				$('.viewer.selected').click();
+				$('.acc-btn.selected').click();
 
 			});
 		},
