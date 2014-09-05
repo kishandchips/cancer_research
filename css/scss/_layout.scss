@@ -275,6 +275,10 @@ body {
 
 			img {
 				display: block;
+
+				&.scaleup {
+					width: 100%;
+				}
 			}
 
 			.play-btn {
