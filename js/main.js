@@ -60,8 +60,7 @@
 					if(size) {
 						var url = $.jYoutube(image.data('id'), size);
 
-						image.attr('src', url).data('size', size);	
-						
+						image.attr('src', url).data('size', size);			
 					}										
 									
 				}).data('id', id).data('size', size).attr('src', url);
@@ -71,10 +70,6 @@
 
 		loaded: function(){
 			this.setBoxSizing();
-
-			// $('.poster').each(function(i, obj) {
-			// 	$(this).find('img').addClass('scale');
-			// });
 		},
 
 		setBoxSizing: function(){

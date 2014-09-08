@@ -1828,8 +1828,9 @@ body {
       opacity: 1; }
     /* line 455, scss/_layout.scss */
     .page section a.popup-video img {
-      display: block; }
-    /* line 459, scss/_layout.scss */
+      display: block;
+      width: 100%; }
+    /* line 460, scss/_layout.scss */
     .page section a.popup-video .caption {
       background-color: rgba(0, 0, 0, 0.8);
       position: absolute;
@@ -1843,7 +1844,7 @@ body {
       display: block;
       bottom: -80px;
       text-align: left; }
-      /* line 470, scss/_layout.scss */
+      /* line 471, scss/_layout.scss */
       .page section a.popup-video .caption p {
         font-family: 'museo_sans500',Arial, Helvetica, sans-serif;
         font-weight: normal;
@@ -1853,22 +1854,22 @@ body {
         font-size: 1.2rem;
         padding: 0 10px;
         line-height: 1.4; }
-    /* line 481, scss/_layout.scss */
+    /* line 482, scss/_layout.scss */
     .page section a.popup-video:hover:before {
       background: url("../images/buttons/play_btn_small.png") left bottom no-repeat; }
-    /* line 485, scss/_layout.scss */
+    /* line 486, scss/_layout.scss */
     .page section a.popup-video:hover .caption {
       bottom: 0; }
-/* line 492, scss/_layout.scss */
+/* line 493, scss/_layout.scss */
 .page .links {
   margin-bottom: 15%; }
-  /* line 496, scss/_layout.scss */
+  /* line 497, scss/_layout.scss */
   .page .links a {
     position: relative; }
-    /* line 499, scss/_layout.scss */
+    /* line 500, scss/_layout.scss */
     .page .links a .inner {
       overflow: hidden; }
-    /* line 503, scss/_layout.scss */
+    /* line 504, scss/_layout.scss */
     .page .links a img {
       position: relative;
       top: 50%;
@@ -1885,12 +1886,12 @@ body {
       -ms-transform: scale(1);
       transform: scale(1);
       display: block; }
-    /* line 515, scss/_layout.scss */
+    /* line 516, scss/_layout.scss */
     .page .links a:hover img {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
-  /* line 523, scss/_layout.scss */
+  /* line 524, scss/_layout.scss */
   .page .links h2 {
     position: relative;
     top: 50%;
@@ -1912,56 +1913,56 @@ body {
     box-sizing: border-box;
     /* Opera/IE 8+ */
     padding: 0 10%; }
-    /* line 535, scss/_layout.scss */
+    /* line 536, scss/_layout.scss */
     .page .links h2:before {
       margin-right: 30px; }
-  /* line 543, scss/_layout.scss */
+  /* line 544, scss/_layout.scss */
   .page .links .seven {
     width: 66.5%; }
-  /* line 547, scss/_layout.scss */
+  /* line 548, scss/_layout.scss */
   .page .links .three {
     width: 33.2%; }
 
-/* line 555, scss/_layout.scss */
+/* line 556, scss/_layout.scss */
 footer, footer:before, footer:after, footer *, footer *:before, footer *:after {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 558, scss/_layout.scss */
+/* line 559, scss/_layout.scss */
 footer[role=contentinfo] {
   background-color: #e3e3e3;
   clear: both;
   margin-top: 20px; }
-  /* line 563, scss/_layout.scss */
+  /* line 564, scss/_layout.scss */
   footer[role=contentinfo] .container {
     max-width: 980px; }
-  /* line 567, scss/_layout.scss */
+  /* line 568, scss/_layout.scss */
   footer[role=contentinfo] h2 {
     color: white;
     text-transform: none; }
-  /* line 572, scss/_layout.scss */
+  /* line 573, scss/_layout.scss */
   footer[role=contentinfo] nav ul.section-links {
     float: none;
     text-align: center;
     background-color: #333333;
     margin: 0;
     padding: 10px 0; }
-    /* line 579, scss/_layout.scss */
+    /* line 580, scss/_layout.scss */
     footer[role=contentinfo] nav ul.section-links li {
       display: inline;
       padding: 0 1.2em;
       background: transparent url(../images/misc/sprite-full.png) no-repeat -602px -603px; }
-      /* line 584, scss/_layout.scss */
+      /* line 585, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li a {
         font-size: 1.2em;
         color: white;
         text-decoration: none;
         font-family: "museo-sans", "Arial", "Helvetica", sans-serif; }
-      /* line 591, scss/_layout.scss */
+      /* line 592, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li.footer-section-hide-links {
         display: none; }
-  /* line 597, scss/_layout.scss */
+  /* line 598, scss/_layout.scss */
   footer[role=contentinfo] #footer-txt {
     position: relative;
     width: auto;
@@ -1971,7 +1972,7 @@ footer[role=contentinfo] {
     background: transparent url(../images/misc/sprite-full.png) no-repeat center -417px;
     overflow: hidden;
     height: 160px; }
-    /* line 607, scss/_layout.scss */
+    /* line 608, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt .bg {
       height: 350px;
       width: 100%;
@@ -1979,50 +1980,50 @@ footer[role=contentinfo] {
       position: absolute;
       overflow: hidden;
       z-index: -1000; }
-    /* line 616, scss/_layout.scss */
+    /* line 617, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt h2 {
       font-size: 1.4em;
       font-family: "museo-sans", "Arial", "Helvetica", sans-serif;
       font-weight: 700;
       margin-bottom: 5px; }
-    /* line 623, scss/_layout.scss */
+    /* line 624, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-social {
       float: left;
       width: 50%; }
-      /* line 627, scss/_layout.scss */
+      /* line 628, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner {
         width: 150px;
         float: right;
         margin-top: 140px; }
-        /* line 632, scss/_layout.scss */
+        /* line 633, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner h2 {
           padding-left: 31%;
           font-family: 'museo_sans500',Arial, Helvetica, sans-serif;
           font-weight: normal;
           margin-top: 3px; }
-        /* line 638, scss/_layout.scss */
+        /* line 639, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul {
           padding-left: 0; }
-          /* line 641, scss/_layout.scss */
+          /* line 642, scss/_layout.scss */
           footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li {
             display: block;
             padding: 0 0 5px 0; }
-            /* line 645, scss/_layout.scss */
+            /* line 646, scss/_layout.scss */
             footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li.twitter {
               padding-left: 31%; }
-            /* line 649, scss/_layout.scss */
+            /* line 650, scss/_layout.scss */
             footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li.fbook {
               padding-left: 31%; }
-    /* line 657, scss/_layout.scss */
+    /* line 658, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-promo {
       float: right;
       width: 50%;
       padding-top: 15px; }
-      /* line 662, scss/_layout.scss */
+      /* line 663, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner {
         width: 185px;
         float: left; }
-        /* line 666, scss/_layout.scss */
+        /* line 667, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner h2 a {
           background-image: url(../images/misc/sprite-full.png);
           background-position: -600px 1px;
@@ -2033,7 +2034,7 @@ footer[role=contentinfo] {
           font-size: 16px;
           font-size: 1.6rem;
           margin: 0; }
-        /* line 676, scss/_layout.scss */
+        /* line 677, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner p {
           color: white;
           background: transparent url(../images/misc/sprite-full.png) no-repeat -594px -1699px;
@@ -2041,11 +2042,11 @@ footer[role=contentinfo] {
           font-size: 1.15em;
           font-family: "museo-sans", "Arial", "Helvetica", sans-serif;
           font-weight: 700; }
-        /* line 685, scss/_layout.scss */
+        /* line 686, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner a {
           color: white;
           text-decoration: none; }
-  /* line 693, scss/_layout.scss */
+  /* line 694, scss/_layout.scss */
   footer[role=contentinfo] ul.info-links {
     font-weight: bold;
     clear: both;
@@ -2053,25 +2054,25 @@ footer[role=contentinfo] {
     margin: 0;
     position: relative;
     top: -145px; }
-    /* line 701, scss/_layout.scss */
+    /* line 702, scss/_layout.scss */
     footer[role=contentinfo] ul.info-links li {
       border-left: none;
       border-bottom: 1px solid white;
       display: block;
       text-align: center;
       padding: 10px 0; }
-      /* line 708, scss/_layout.scss */
+      /* line 709, scss/_layout.scss */
       footer[role=contentinfo] ul.info-links li li a {
         font-size: 1.1em;
         text-decoration: none; }
-        /* line 712, scss/_layout.scss */
+        /* line 713, scss/_layout.scss */
         footer[role=contentinfo] ul.info-links li li a:hover {
           color: #e40085;
           text-decoration: underline; }
-        /* line 717, scss/_layout.scss */
+        /* line 718, scss/_layout.scss */
         footer[role=contentinfo] ul.info-links li li a:first-child {
           border-top: 1px solid white; }
-  /* line 724, scss/_layout.scss */
+  /* line 725, scss/_layout.scss */
   footer[role=contentinfo] #awards {
     float: right;
     position: relative;
@@ -2079,105 +2080,105 @@ footer[role=contentinfo] {
     padding-right: 2%; }
 
 @media screen and (min-width: 981px) {
-  /* line 736, scss/_layout.scss */
+  /* line 737, scss/_layout.scss */
   footer[role=contentinfo] ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    /* line 741, scss/_layout.scss */
+    /* line 742, scss/_layout.scss */
     footer[role=contentinfo] ul li {
       margin: 0;
       padding: 0 0.5em;
       display: inline; }
-      /* line 746, scss/_layout.scss */
+      /* line 747, scss/_layout.scss */
       footer[role=contentinfo] ul li a {
         text-decoration: none; }
-  /* line 753, scss/_layout.scss */
+  /* line 754, scss/_layout.scss */
   footer[role=contentinfo] nav h2.title {
     display: none; }
-  /* line 757, scss/_layout.scss */
+  /* line 758, scss/_layout.scss */
   footer[role=contentinfo] nav ul.section-links {
     float: right;
     padding-top: 10px;
     margin-right: 2%;
     background-color: transparent;
     text-align: left; }
-    /* line 764, scss/_layout.scss */
+    /* line 765, scss/_layout.scss */
     footer[role=contentinfo] nav ul.section-links li {
       display: block;
       padding: 2px 0 0 15px;
       background: transparent url(../images/misc/sprite-full.png) no-repeat -606px -194px;
       margin: 10px 0; }
-      /* line 770, scss/_layout.scss */
+      /* line 771, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li a {
         color: #333333;
         font-size: 1.4em;
         font-family: 'museo_sans500',Arial, Helvetica, sans-serif;
         font-weight: normal;
         font-weight: 700; }
-        /* line 776, scss/_layout.scss */
+        /* line 777, scss/_layout.scss */
         footer[role=contentinfo] nav ul.section-links li a:hover {
           color: #e40085;
           text-decoration: none; }
-      /* line 782, scss/_layout.scss */
+      /* line 783, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li.footer-section-hide-links {
         display: block; }
-  /* line 789, scss/_layout.scss */
+  /* line 790, scss/_layout.scss */
   footer[role=contentinfo] #footer-txt {
     background: transparent url(../images/misc/sprite-full.png) no-repeat 114% -100px;
     overflow: hidden;
     padding-top: 12px;
     max-width: none; }
-    /* line 795, scss/_layout.scss */
+    /* line 796, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt h2 {
       padding-left: 10%; }
-    /* line 799, scss/_layout.scss */
+    /* line 800, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-social {
       width: 52%; }
-      /* line 803, scss/_layout.scss */
+      /* line 804, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social ul li {
         display: block;
         padding: 0 0 5px 0; }
-      /* line 808, scss/_layout.scss */
+      /* line 809, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social ul span {
         padding-left: 27px;
         font-size: 1.1em;
         color: white; }
-      /* line 815, scss/_layout.scss */
+      /* line 816, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner {
         margin-top: 0; }
-        /* line 818, scss/_layout.scss */
+        /* line 819, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner h2 {
           margin: 0;
           padding-bottom: 10px;
           font-size: 16px;
           font-size: 1.6rem; }
-        /* line 824, scss/_layout.scss */
+        /* line 825, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul {
           padding: 0; }
-          /* line 827, scss/_layout.scss */
+          /* line 828, scss/_layout.scss */
           footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li.fbook {
             padding-left: 31%; }
-    /* line 834, scss/_layout.scss */
+    /* line 835, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-promo {
       width: 35%;
       padding-top: 0; }
-      /* line 838, scss/_layout.scss */
+      /* line 839, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner {
         padding-top: 0; }
-        /* line 841, scss/_layout.scss */
+        /* line 842, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner h2 {
           padding-left: 0;
           margin: 0; }
-        /* line 846, scss/_layout.scss */
+        /* line 847, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner p a {
           cursor: default; }
-  /* line 853, scss/_layout.scss */
+  /* line 854, scss/_layout.scss */
   footer[role=contentinfo] #awards {
     float: none;
     top: -140px;
     width: 100px; }
-    /* line 858, scss/_layout.scss */
+    /* line 859, scss/_layout.scss */
     footer[role=contentinfo] #awards img {
       padding: 0 0 0 25px; } }
 /* Magnific Popup CSS */
