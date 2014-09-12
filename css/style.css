@@ -2181,6 +2181,25 @@ footer[role=contentinfo] {
     /* line 859, scss/_layout.scss */
     footer[role=contentinfo] #awards img {
       padding: 0 0 0 25px; } }
+/* line 871, scss/_layout.scss */
+.slider-four .slides li {
+  width: 50%; }
+/* line 876, scss/_layout.scss */
+.slider-four .flex-control-nav {
+  bottom: -20px;
+  line-height: 1;
+  background-color: #fff; }
+  /* line 881, scss/_layout.scss */
+  .slider-four .flex-control-nav li a {
+    width: 30px;
+    height: 10px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+    /* line 886, scss/_layout.scss */
+    .slider-four .flex-control-nav li a.flex-active {
+      background-color: #e51585; }
+
 /* Magnific Popup CSS */
 /* line 2, scss/_magnific_popup.scss */
 .mfp-bg {

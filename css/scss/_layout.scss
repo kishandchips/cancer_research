@@ -863,3 +863,30 @@ footer[role=contentinfo] {
 
 	}	
 }
+
+//FLEXSLIDER
+
+.slider-four{
+	.slides{
+		li{
+			width: 50%;
+		}		
+	}
+	
+	.flex-control-nav{
+		bottom: -20px;
+		line-height: 1;
+		background-color: #fff;
+	
+		li a{
+			width: 30px;
+			height: 10px;
+			@include border-radius(0);
+
+			&.flex-active{
+				background-color: #e51585;
+			}
+		}		
+	}
+
+}
