@@ -342,6 +342,29 @@ body {
 					p {
 						color: #e51585;
 					}
+
+					.video-thumb{
+						&:after{
+							background: url('../images/buttons/play_btn_small.png') left top no-repeat;
+						}
+					}
+				}
+				.video-thumb{
+					position: relative;
+
+					&:after{
+						content: "";
+						width: 41px;
+						height: 28px;
+						background: url('../images/buttons/play_btn_small.png') left bottom no-repeat;
+						display: block;
+						@include valign;
+						position: absolute;
+						cursor: pointer;
+						left: 50%;
+						margin-left: -20px;
+						@include transition(none);
+					}
 				}
 			}
 		}
@@ -411,20 +434,20 @@ body {
 				}				
 			}	
 
-			&:first-child {
+			&.main {
 
 				a.popup-video {
 					&:before {
 						width: 77px;
 						height: 52px;
-						background: url('../images/buttons/play_btn.png') left top no-repeat;
+						background: url('../images/buttons/play_btn.png') left bottom no-repeat;
 						margin-left: -36px;
 					}
 
 					&:hover {
 
 						&:before {
-							background: url('../images/buttons/play_btn.png') left bottom no-repeat;	
+							background: url('../images/buttons/play_btn.png') left top no-repeat;	
 						}
 						
 					}						
@@ -442,7 +465,7 @@ body {
 				content: '';
 				width: 41px;
 				height: 28px;
-				background: url('../images/buttons/play_btn_small.png') left top no-repeat;
+				background: url('../images/buttons/play_btn_small.png') left bottom no-repeat;
 				display: block;
 				@include valign;
 				position: absolute;
@@ -489,7 +512,7 @@ body {
 
 			&:hover {
 				&:before {
-					background: url('../images/buttons/play_btn_small.png') left bottom no-repeat;
+					background: url('../images/buttons/play_btn_small.png') left top no-repeat;
 				}
 
 				.caption {

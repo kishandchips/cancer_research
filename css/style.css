@@ -1737,7 +1737,33 @@ body {
   /* line 342, scss/_layout.scss */
   #main .acc-content .flexslider li:hover p {
     color: #e51585; }
-/* line 349, scss/_layout.scss */
+  /* line 347, scss/_layout.scss */
+  #main .acc-content .flexslider li:hover .video-thumb:after {
+    background: url("../images/buttons/play_btn_small.png") left top no-repeat; }
+  /* line 352, scss/_layout.scss */
+  #main .acc-content .flexslider li .video-thumb {
+    position: relative; }
+    /* line 355, scss/_layout.scss */
+    #main .acc-content .flexslider li .video-thumb:after {
+      content: "";
+      width: 41px;
+      height: 28px;
+      background: url("../images/buttons/play_btn_small.png") left bottom no-repeat;
+      display: block;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute;
+      cursor: pointer;
+      left: 50%;
+      margin-left: -20px;
+      -moz-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none; }
+/* line 372, scss/_layout.scss */
 #main .acc-content .footer-btn {
   background: #434343;
   width: 100%;
@@ -1748,23 +1774,23 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   display: block; }
-  /* line 359, scss/_layout.scss */
+  /* line 382, scss/_layout.scss */
   #main .acc-content .footer-btn:hover {
     color: #009DDE; }
-  /* line 364, scss/_layout.scss */
+  /* line 387, scss/_layout.scss */
   #main .acc-content .footer-btn:before {
     width: 100%;
     display: block;
     font-size: 11px;
     font-size: 1.1rem; }
-/* line 374, scss/_layout.scss */
+/* line 397, scss/_layout.scss */
 #main .player {
   display: none; }
 
-/* line 381, scss/_layout.scss */
+/* line 404, scss/_layout.scss */
 .page section {
   margin: 4em 0 5em; }
-  /* line 384, scss/_layout.scss */
+  /* line 407, scss/_layout.scss */
   .page section .section-title {
     background: #199edb;
     display: inline-block;
@@ -1778,43 +1804,43 @@ body {
     font-size: 25px;
     font-size: 2.5rem;
     padding: 0.5em; }
-  /* line 393, scss/_layout.scss */
+  /* line 416, scss/_layout.scss */
   .page section .section-inner {
     background: #FFF;
     padding: 0.5em; }
   @media only screen and (max-width: 43.75em) {
-    /* line 399, scss/_layout.scss */
+    /* line 422, scss/_layout.scss */
     .page section .span {
       width: 50%; } }
   @media only screen and (max-width: 25em) {
-    /* line 399, scss/_layout.scss */
+    /* line 422, scss/_layout.scss */
     .page section .span {
       width: 100%; } }
   @media only screen and (max-width: 43.75em) {
-    /* line 408, scss/_layout.scss */
+    /* line 431, scss/_layout.scss */
     .page section .span.five {
       width: 100%; } }
-  /* line 417, scss/_layout.scss */
-  .page section .span:first-child a.popup-video:before {
+  /* line 440, scss/_layout.scss */
+  .page section .span.main a.popup-video:before {
     width: 77px;
     height: 52px;
-    background: url("../images/buttons/play_btn.png") left top no-repeat;
+    background: url("../images/buttons/play_btn.png") left bottom no-repeat;
     margin-left: -36px; }
-  /* line 426, scss/_layout.scss */
-  .page section .span:first-child a.popup-video:hover:before {
-    background: url("../images/buttons/play_btn.png") left bottom no-repeat; }
-  /* line 435, scss/_layout.scss */
+  /* line 449, scss/_layout.scss */
+  .page section .span.main a.popup-video:hover:before {
+    background: url("../images/buttons/play_btn.png") left top no-repeat; }
+  /* line 458, scss/_layout.scss */
   .page section a.popup-video {
     overflow: hidden;
     display: block;
     position: relative;
     margin: 7px 0; }
-    /* line 441, scss/_layout.scss */
+    /* line 464, scss/_layout.scss */
     .page section a.popup-video:before {
       content: '';
       width: 41px;
       height: 28px;
-      background: url("../images/buttons/play_btn_small.png") left top no-repeat;
+      background: url("../images/buttons/play_btn_small.png") left bottom no-repeat;
       display: block;
       position: relative;
       top: 50%;
@@ -1826,11 +1852,11 @@ body {
       left: 50%;
       margin-left: -21px;
       opacity: 1; }
-    /* line 455, scss/_layout.scss */
+    /* line 478, scss/_layout.scss */
     .page section a.popup-video img {
       display: block;
       width: 100%; }
-    /* line 460, scss/_layout.scss */
+    /* line 483, scss/_layout.scss */
     .page section a.popup-video .caption {
       background-color: rgba(0, 0, 0, 0.8);
       position: absolute;
@@ -1844,7 +1870,7 @@ body {
       display: block;
       bottom: -80px;
       text-align: left; }
-      /* line 471, scss/_layout.scss */
+      /* line 494, scss/_layout.scss */
       .page section a.popup-video .caption p {
         display: inline-block;
         width: 80%;
@@ -1856,7 +1882,7 @@ body {
         font-size: 1.2rem;
         padding: 0 10px;
         line-height: 1.4; }
-      /* line 481, scss/_layout.scss */
+      /* line 504, scss/_layout.scss */
       .page section a.popup-video .caption span {
         display: inline-block;
         width: 18%;
@@ -1864,22 +1890,22 @@ body {
         font-size: 1.2rem;
         color: #e51585;
         text-align: left; }
-    /* line 491, scss/_layout.scss */
+    /* line 514, scss/_layout.scss */
     .page section a.popup-video:hover:before {
-      background: url("../images/buttons/play_btn_small.png") left bottom no-repeat; }
-    /* line 495, scss/_layout.scss */
+      background: url("../images/buttons/play_btn_small.png") left top no-repeat; }
+    /* line 518, scss/_layout.scss */
     .page section a.popup-video:hover .caption {
       bottom: 0; }
-/* line 502, scss/_layout.scss */
+/* line 525, scss/_layout.scss */
 .page .links {
   margin-bottom: 15%; }
-  /* line 506, scss/_layout.scss */
+  /* line 529, scss/_layout.scss */
   .page .links a {
     position: relative; }
-    /* line 509, scss/_layout.scss */
+    /* line 532, scss/_layout.scss */
     .page .links a .inner {
       overflow: hidden; }
-    /* line 513, scss/_layout.scss */
+    /* line 536, scss/_layout.scss */
     .page .links a img {
       position: relative;
       top: 50%;
@@ -1896,12 +1922,12 @@ body {
       -ms-transform: scale(1);
       transform: scale(1);
       display: block; }
-    /* line 525, scss/_layout.scss */
+    /* line 548, scss/_layout.scss */
     .page .links a:hover img {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
-  /* line 533, scss/_layout.scss */
+  /* line 556, scss/_layout.scss */
   .page .links h2 {
     position: relative;
     top: 50%;
@@ -1923,56 +1949,56 @@ body {
     box-sizing: border-box;
     /* Opera/IE 8+ */
     padding: 0 10%; }
-    /* line 545, scss/_layout.scss */
+    /* line 568, scss/_layout.scss */
     .page .links h2:before {
       margin-right: 30px; }
-  /* line 553, scss/_layout.scss */
+  /* line 576, scss/_layout.scss */
   .page .links .seven {
     width: 66.5%; }
-  /* line 557, scss/_layout.scss */
+  /* line 580, scss/_layout.scss */
   .page .links .three {
     width: 33.2%; }
 
-/* line 565, scss/_layout.scss */
+/* line 588, scss/_layout.scss */
 footer, footer:before, footer:after, footer *, footer *:before, footer *:after {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 568, scss/_layout.scss */
+/* line 591, scss/_layout.scss */
 footer[role=contentinfo] {
   background-color: #e3e3e3;
   clear: both;
   margin-top: 20px; }
-  /* line 573, scss/_layout.scss */
+  /* line 596, scss/_layout.scss */
   footer[role=contentinfo] .container {
     max-width: 980px; }
-  /* line 577, scss/_layout.scss */
+  /* line 600, scss/_layout.scss */
   footer[role=contentinfo] h2 {
     color: white;
     text-transform: none; }
-  /* line 582, scss/_layout.scss */
+  /* line 605, scss/_layout.scss */
   footer[role=contentinfo] nav ul.section-links {
     float: none;
     text-align: center;
     background-color: #333333;
     margin: 0;
     padding: 10px 0; }
-    /* line 589, scss/_layout.scss */
+    /* line 612, scss/_layout.scss */
     footer[role=contentinfo] nav ul.section-links li {
       display: inline;
       padding: 0 1.2em;
       background: transparent url(../images/misc/sprite-full.png) no-repeat -602px -603px; }
-      /* line 594, scss/_layout.scss */
+      /* line 617, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li a {
         font-size: 1.2em;
         color: white;
         text-decoration: none;
         font-family: "museo-sans", "Arial", "Helvetica", sans-serif; }
-      /* line 601, scss/_layout.scss */
+      /* line 624, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li.footer-section-hide-links {
         display: none; }
-  /* line 607, scss/_layout.scss */
+  /* line 630, scss/_layout.scss */
   footer[role=contentinfo] #footer-txt {
     position: relative;
     width: auto;
@@ -1982,7 +2008,7 @@ footer[role=contentinfo] {
     background: transparent url(../images/misc/sprite-full.png) no-repeat center -417px;
     overflow: hidden;
     height: 160px; }
-    /* line 617, scss/_layout.scss */
+    /* line 640, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt .bg {
       height: 350px;
       width: 100%;
@@ -1990,50 +2016,50 @@ footer[role=contentinfo] {
       position: absolute;
       overflow: hidden;
       z-index: -1000; }
-    /* line 626, scss/_layout.scss */
+    /* line 649, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt h2 {
       font-size: 1.4em;
       font-family: "museo-sans", "Arial", "Helvetica", sans-serif;
       font-weight: 700;
       margin-bottom: 5px; }
-    /* line 633, scss/_layout.scss */
+    /* line 656, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-social {
       float: left;
       width: 50%; }
-      /* line 637, scss/_layout.scss */
+      /* line 660, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner {
         width: 150px;
         float: right;
         margin-top: 140px; }
-        /* line 642, scss/_layout.scss */
+        /* line 665, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner h2 {
           padding-left: 31%;
           font-family: 'museo_sans500',Arial, Helvetica, sans-serif;
           font-weight: normal;
           margin-top: 3px; }
-        /* line 648, scss/_layout.scss */
+        /* line 671, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul {
           padding-left: 0; }
-          /* line 651, scss/_layout.scss */
+          /* line 674, scss/_layout.scss */
           footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li {
             display: block;
             padding: 0 0 5px 0; }
-            /* line 655, scss/_layout.scss */
+            /* line 678, scss/_layout.scss */
             footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li.twitter {
               padding-left: 31%; }
-            /* line 659, scss/_layout.scss */
+            /* line 682, scss/_layout.scss */
             footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li.fbook {
               padding-left: 31%; }
-    /* line 667, scss/_layout.scss */
+    /* line 690, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-promo {
       float: right;
       width: 50%;
       padding-top: 15px; }
-      /* line 672, scss/_layout.scss */
+      /* line 695, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner {
         width: 185px;
         float: left; }
-        /* line 676, scss/_layout.scss */
+        /* line 699, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner h2 a {
           background-image: url(../images/misc/sprite-full.png);
           background-position: -600px 1px;
@@ -2044,7 +2070,7 @@ footer[role=contentinfo] {
           font-size: 16px;
           font-size: 1.6rem;
           margin: 0; }
-        /* line 686, scss/_layout.scss */
+        /* line 709, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner p {
           color: white;
           background: transparent url(../images/misc/sprite-full.png) no-repeat -594px -1699px;
@@ -2052,11 +2078,11 @@ footer[role=contentinfo] {
           font-size: 1.15em;
           font-family: "museo-sans", "Arial", "Helvetica", sans-serif;
           font-weight: 700; }
-        /* line 695, scss/_layout.scss */
+        /* line 718, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner a {
           color: white;
           text-decoration: none; }
-  /* line 703, scss/_layout.scss */
+  /* line 726, scss/_layout.scss */
   footer[role=contentinfo] ul.info-links {
     font-weight: bold;
     clear: both;
@@ -2064,25 +2090,25 @@ footer[role=contentinfo] {
     margin: 0;
     position: relative;
     top: -145px; }
-    /* line 711, scss/_layout.scss */
+    /* line 734, scss/_layout.scss */
     footer[role=contentinfo] ul.info-links li {
       border-left: none;
       border-bottom: 1px solid white;
       display: block;
       text-align: center;
       padding: 10px 0; }
-      /* line 718, scss/_layout.scss */
+      /* line 741, scss/_layout.scss */
       footer[role=contentinfo] ul.info-links li li a {
         font-size: 1.1em;
         text-decoration: none; }
-        /* line 722, scss/_layout.scss */
+        /* line 745, scss/_layout.scss */
         footer[role=contentinfo] ul.info-links li li a:hover {
           color: #e40085;
           text-decoration: underline; }
-        /* line 727, scss/_layout.scss */
+        /* line 750, scss/_layout.scss */
         footer[role=contentinfo] ul.info-links li li a:first-child {
           border-top: 1px solid white; }
-  /* line 734, scss/_layout.scss */
+  /* line 757, scss/_layout.scss */
   footer[role=contentinfo] #awards {
     float: right;
     position: relative;
@@ -2090,123 +2116,123 @@ footer[role=contentinfo] {
     padding-right: 2%; }
 
 @media screen and (min-width: 981px) {
-  /* line 746, scss/_layout.scss */
+  /* line 769, scss/_layout.scss */
   footer[role=contentinfo] ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    /* line 751, scss/_layout.scss */
+    /* line 774, scss/_layout.scss */
     footer[role=contentinfo] ul li {
       margin: 0;
       padding: 0 0.5em;
       display: inline; }
-      /* line 756, scss/_layout.scss */
+      /* line 779, scss/_layout.scss */
       footer[role=contentinfo] ul li a {
         text-decoration: none; }
-  /* line 763, scss/_layout.scss */
+  /* line 786, scss/_layout.scss */
   footer[role=contentinfo] nav h2.title {
     display: none; }
-  /* line 767, scss/_layout.scss */
+  /* line 790, scss/_layout.scss */
   footer[role=contentinfo] nav ul.section-links {
     float: right;
     padding-top: 10px;
     margin-right: 2%;
     background-color: transparent;
     text-align: left; }
-    /* line 774, scss/_layout.scss */
+    /* line 797, scss/_layout.scss */
     footer[role=contentinfo] nav ul.section-links li {
       display: block;
       padding: 2px 0 0 15px;
       background: transparent url(../images/misc/sprite-full.png) no-repeat -606px -194px;
       margin: 10px 0; }
-      /* line 780, scss/_layout.scss */
+      /* line 803, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li a {
         color: #333333;
         font-size: 1.4em;
         font-family: 'museo_sans500',Arial, Helvetica, sans-serif;
         font-weight: normal;
         font-weight: 700; }
-        /* line 786, scss/_layout.scss */
+        /* line 809, scss/_layout.scss */
         footer[role=contentinfo] nav ul.section-links li a:hover {
           color: #e40085;
           text-decoration: none; }
-      /* line 792, scss/_layout.scss */
+      /* line 815, scss/_layout.scss */
       footer[role=contentinfo] nav ul.section-links li.footer-section-hide-links {
         display: block; }
-  /* line 799, scss/_layout.scss */
+  /* line 822, scss/_layout.scss */
   footer[role=contentinfo] #footer-txt {
     background: transparent url(../images/misc/sprite-full.png) no-repeat 114% -100px;
     overflow: hidden;
     padding-top: 12px;
     max-width: none; }
-    /* line 805, scss/_layout.scss */
+    /* line 828, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt h2 {
       padding-left: 10%; }
-    /* line 809, scss/_layout.scss */
+    /* line 832, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-social {
       width: 52%; }
-      /* line 813, scss/_layout.scss */
+      /* line 836, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social ul li {
         display: block;
         padding: 0 0 5px 0; }
-      /* line 818, scss/_layout.scss */
+      /* line 841, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social ul span {
         padding-left: 27px;
         font-size: 1.1em;
         color: white; }
-      /* line 825, scss/_layout.scss */
+      /* line 848, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner {
         margin-top: 0; }
-        /* line 828, scss/_layout.scss */
+        /* line 851, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner h2 {
           margin: 0;
           padding-bottom: 10px;
           font-size: 16px;
           font-size: 1.6rem; }
-        /* line 834, scss/_layout.scss */
+        /* line 857, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul {
           padding: 0; }
-          /* line 837, scss/_layout.scss */
+          /* line 860, scss/_layout.scss */
           footer[role=contentinfo] #footer-txt #footer-social .footer-social-inner ul li.fbook {
             padding-left: 31%; }
-    /* line 844, scss/_layout.scss */
+    /* line 867, scss/_layout.scss */
     footer[role=contentinfo] #footer-txt #footer-promo {
       width: 35%;
       padding-top: 0; }
-      /* line 848, scss/_layout.scss */
+      /* line 871, scss/_layout.scss */
       footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner {
         padding-top: 0; }
-        /* line 851, scss/_layout.scss */
+        /* line 874, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner h2 {
           padding-left: 0;
           margin: 0; }
-        /* line 856, scss/_layout.scss */
+        /* line 879, scss/_layout.scss */
         footer[role=contentinfo] #footer-txt #footer-promo .footer-promo-inner p a {
           cursor: default; }
-  /* line 863, scss/_layout.scss */
+  /* line 886, scss/_layout.scss */
   footer[role=contentinfo] #awards {
     float: none;
     top: -140px;
     width: 100px; }
-    /* line 868, scss/_layout.scss */
+    /* line 891, scss/_layout.scss */
     footer[role=contentinfo] #awards img {
       padding: 0 0 0 25px; } }
-/* line 880, scss/_layout.scss */
+/* line 903, scss/_layout.scss */
 .slider-four .slides li {
   width: 50%; }
-/* line 885, scss/_layout.scss */
+/* line 908, scss/_layout.scss */
 .slider-four .flex-control-nav {
   bottom: -20px;
   line-height: 1;
   background-color: #fff; }
-  /* line 890, scss/_layout.scss */
+  /* line 913, scss/_layout.scss */
   .slider-four .flex-control-nav li a {
     width: 30px;
     height: 10px;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0; }
-    /* line 895, scss/_layout.scss */
+    /* line 918, scss/_layout.scss */
     .slider-four .flex-control-nav li a.flex-active {
       background-color: #e51585; }
 
