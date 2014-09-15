@@ -469,13 +469,22 @@ body {
 				text-align: left;  	
 
 				p {
+					display: inline-block;
+					width: 80%;
 					@include museo;
 					color: #fff; 
 					text-transform: uppercase;
 					@include font-size(12);
 					padding: 0 10px;
 					line-height: 1.4;
-				}		    
+				}
+				span{
+					display: inline-block;
+					width: 18%;
+					@include font-size(12);
+					color: #e51585;
+					text-align: left;
+				}
 			}  			
 
 			&:hover {

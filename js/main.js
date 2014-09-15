@@ -5,7 +5,7 @@
 
 			main.loaded();	
 			main.accordion.init();
-			main.magnificPopup();			
+			main.magnificPopup();		
 
 			$('a[href^=#].scroll-to-btn').click(function(){
 				var target = $($(this).attr('href'));
@@ -23,6 +23,10 @@
 				maxItems: 4,
 				controlNav: false,
 				slideshow: false
+			});
+
+			$('.slider-four').flexslider({
+				animation: "slide",
 			});	
 
 			$('.mobile-navigation-btn').on('touchstart click', function() {
@@ -34,13 +38,12 @@
 				}
 			});	
 
-			$('.poster').each(function(i, obj) {
+			$('.poster').each(function() {
 				var poster = $(this),
 					id = poster.attr('id'),
 					url = $.jYoutube(id),
 					img = $('<img>'),
 					size = 'big';
-
 				poster.append(img);
 
 				img.on('load', function(){
