@@ -6,7 +6,6 @@
 			main.loaded();	
 			main.accordion.init();
 			main.magnificPopup();
-			main.youtube();	
 
 			$('a[href^=#].scroll-to-btn').click(function(){
 				var target = $($(this).attr('href'));
@@ -70,27 +69,6 @@
 				}).data('id', id).data('size', size).attr('src', url);
 			});		    
 		},
-
-		youtube:{
-			init: function(){
-				var source   = $("#video-template").html();
-	            var template = Handlebars.compile(source);
-	            var url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=";
-	            var key = "&key=AIzaSyCdaJojH7u4H3jAjtuZ56p8fJV0xZ4UoXc";
-
-	            $('.newest .slide .span.five').each(function(){
-	                id = $(this).children('a').data('video-id');
-
-	                $.ajax({
-	                    url: url + id +key,
-	                }).done(function(data){ 
-	                    var html  = template(data);
-	                    $('.newest .slide').append(html);
-	                });
-	            });
-			}
-		},
-
 
 		loaded: function(){
 			this.setBoxSizing();
